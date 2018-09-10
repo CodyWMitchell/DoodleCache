@@ -5,8 +5,6 @@
 </head>
 
 <body>
-  <h1>Welcome to DoodleCache!</h1>
-
   {{> map}}
 </body>
 
@@ -16,14 +14,14 @@
   let canvas;
   const mappa = new Mappa('Leaflet');
   const options = {
-    lat: 0,
-    lng: 0,
+    lat: 37.5687,
+    lng: -84.2963,
     zoom: 4,
     style: "http://{s}.tile.osm.org/{z}/{x}/{y}.png"
   }
 
   function setup(){
-    canvas = createCanvas(640,640);
+    canvas = createCanvas(600,400);
     myMap = mappa.tileMap(options);
     myMap.overlay(canvas)
 
