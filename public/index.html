@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<style>
+html, body {
+  height: 100%;
+}
+
+body {
+  background-image: url("just-waves.png");
+  background-repeat: repeat;
+  margin: 0;
+  display: flex;
+
+  /* This centers our sketch horizontally. */
+  justify-content: center;
+
+  /* This centers our sketch vertically. */
+  align-items: center;
+}
+
+button {
+  padding: 10px;
+  height:10%;
+  width: 100%;
+  min-height: 50px;
+
+  font-weight: bolder;
+  font-size: 20px;
+  font-family: sans-serif;;
+  color: white;
+  text-shadow: -1px -1px 0 #379AA4;
+
+  border: 1px solid #3AA;
+  background: linear-gradient(0deg, #379AA4, #94DFFF);
+}
+
+button:active {
+  color: #DDD;
+  background: linear-gradient(0deg, #94DFFF, #379AA4);
+}
+
+.leaflet-control-zoom {
+  display: none;
+}
+
+#content {
+  display: block;
+  text-align: center;
+  background: none;
+  border: none;
+}
+
+#p5box {
+  border: 2px solid #94DFFF;
+  border-radius: 10px;
+}
+</style>
+<head>
+  <title>SketchCache</title>
+  <meta charset="UTF-8">
+</head>
+<body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/addons/p5.dom.js" type="text/javascript"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mappa-mundi/dist/mappa.js" type="text/javascript"></script>
+  <script src= "https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.1/socket.io.js"></script>
+  <script src="sketch.js"></script>
+  <br />
+  <div id="content">
+    <div id="p5box"></div>
+    <button onClick="emitClear()">CLEAR</button>
+  </div>
+</body>
+</html>
