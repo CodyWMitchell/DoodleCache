@@ -15,7 +15,9 @@ io.sockets.on('connection', newConnection);
 function newConnection(socket) {
   console.log("new connection: ")
   console.log(socket.id);
-
+  
+  
+  // Handle user events from sketch.js
   socket.on('mouse', mouseEvent);
   socket.on('clear', clearCanvas);
 
