@@ -1,7 +1,11 @@
+
+//Comment the next block out if running locally
+//They ensure https connection for geolocation data
 if(window.location.protocol != 'https:') {
   location.href = location.href.replace("http://", "https://");
 }
 
+// Socket connection
 var socket;
 
 //Map Vars
