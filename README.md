@@ -4,7 +4,8 @@ This is my app for Senior Projects!
 It works with maps, drawing, and geo-location!
 
 Currently hosted @ sketchcache.herokuapp.com
-#To run locally:
+
+To run locally:
 
 1. Remove HTTPS restriction from server.js
 2. Download as ZIP, and extract
