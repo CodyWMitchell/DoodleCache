@@ -68,7 +68,7 @@ function setup() {
 
   navigator.geolocation.getCurrentPosition(onSuccess, onError);
 
-  socket = io.connect("https://sketchcache.herokuapp.com");
+  socket = io.connect("https://doodlecache.herokuapp.com");
   socket.on('mouse', drawLine);
   socket.on('clear', clearCanvas);
 
