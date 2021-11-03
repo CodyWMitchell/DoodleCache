@@ -3,7 +3,7 @@
 This is my app for Senior Projects!
 It works with maps, drawing, and geo-location!
 
-Currently hosted @ sketchcache.herokuapp.com
+Currently hosted @ doodle.herokuapp.com
 
 To run locally:
 
